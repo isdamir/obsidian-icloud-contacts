@@ -88,7 +88,7 @@ const DAVNamespaceShort = {
 	DAV: "d",
 };
 
-const serverUrl = "https://contacts.icloud.com";
+const serverUrl = "https://contacts.icloud.com.cn";
 const accountType: "carddav" | "caldav" = "carddav";
 
 export async function fetchContacts(username: string, password: string) {
