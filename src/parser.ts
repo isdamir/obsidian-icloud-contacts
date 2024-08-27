@@ -49,7 +49,7 @@ function getFullName(jCard: JCard): string {
 	if (isOrg) {
 		return (
 			jCard.find(({ key }) => key === "org")?.value as string[]
-		)[0].replace(/\\/g, "");
+		)[0].replace(/\\/g, "");/*  *//*  */
 	}
 
 	const name = jCard.find(({ key }) => key === "n");
@@ -72,5 +72,5 @@ function convertNameToFullName([
 		honorificSuffixes,
 	]
 		.filter((p) => !!p)
-		.join(" ");
+		.join("");
 }
