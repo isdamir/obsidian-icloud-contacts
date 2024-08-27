@@ -66,9 +66,9 @@ function convertNameToFullName([
 ]: string[]) {
 	return [
 		honorificPrefixes,
-		givenName,
-		additionalMiddleNames,
 		familyName,
+		additionalMiddleNames,
+		givenName,
 		honorificSuffixes,
 	]
 		.filter((p) => !!p)
